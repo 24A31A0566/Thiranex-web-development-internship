@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Projects | Arjun Mehra</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore Arjun Mehra's data science, ML, NLP, and web projects with descriptions and GitHub links.">
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<a href="#main-content">Skip to main content</a>
+		<header>
+			<nav aria-label="Main navigation" >
+				<a href="index.html" aria-current="page" >Home</a>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+		
+		<main id="main-content">
+			<h1>Projects I've Built</h1>
+			<section class="domain">
+				<h2>Natural Language Processing</h2>
+				<article>
+					<h3>Sentiment Analysis of Product Reviews</h3>
+					<p>Classifies Amazon product reviews as positive, negative, or neutral using a fine-tuned BERT model.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Understanding customer opinions at scale is tedious manually. Fine-tuned a BERT model on 50,000 labeled Amazon reviews with a standard NLP preprocessing pipeline. Achieved 91% classification accuracy across positive, neutral, and negative sentiments, visualized through a category-wise dashboard.</p>
+						<p>Tech used: Python, HuggingFace Transformers, Pandas, Scikit-learn</p>
+						<a href="https://github.com/">View Sentiment Analyzer on GitHub</a>
+					</details>
+				</article>
+				<article>
+					<h3>News Article Scraper & Classifier</h3>
+					<p>Scrapes top news articles daily and classifies them into categories using a Naive Bayes model.</p>
+					<details>
+						<summary>View details</summary>
+						<p>News aggregation is fragmented across too many sources with no smart categorization. Built a Scrapy pipeline that scrapes 100+ articles daily and classifies them using a Naive Bayes model trained on the 20 Newsgroups dataset. Articles are auto-sorted into 5 categories and stored in SQLite, ready to power a personalized feed.</p>
+						<p>Tech used: Python, BeautifulSoup, Scrapy, NLTK, Scikit-learn</p>
+						<a href="https://github.com/">View News Classifier on GitHub</a>
+					</details>
+				</article>
+			</section>
+			<section class="domain">
+				<h2>Machine Learning & Prediction</h2>
+				<article>
+					<h3>Student Performance Predictor</h3>
+					<p>Predicts final exam scores based on study habits, attendance, and socioeconomic factors.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Academic outcomes are influenced by far more than just study hours, yet most interventions ignore non-academic factors. Trained multiple regression models on 12 features including attendance, parental education, and internet access, with Random Forest performing best at RMSE 4.2. Wrapped into a Streamlit app for counselors to query predictions in real time.</p>
+						<p>Tech used: Python, Scikit-learn, Pandas, Matplotlib, Streamlit</p>
+						<a href="https://github.com/">View Performance Predictor on GitHub</a>
+					</details>
+				</article>
+				<article>
+					<h3>House Price Estimator</h3>
+					<p>Estimates property prices in Hyderabad using regression models trained on local housing data.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Hyderabad's real estate market is fast-moving and hard to manually appraise. Scraped 8,000+ local listings and trained an XGBoost model on features like location, area, and proximity to IT hubs, reaching an R² of 0.87. Exposed via a Flask API so external tools can query price estimates with a simple POST request.</p>
+						<p>Tech used: Python, XGBoost, Pandas, Seaborn, Flask</p>
+						<a href="https://github.com/">View House Price Estimator on GitHub</a>
+					</details>
+				</article>
+			</section>
+			<section class="domain">
+				<h2>Computer Vision</h2>
+				<article>
+					<h3>Crop Disease Detection using CNN</h3>
+					<p>Identifies plant diseases from leaf images using a convolutional neural network trained on PlantVillage dataset.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Farmers often misidentify plant diseases, leading to wrong treatments and crop loss. Trained a MobileNetV2-based CNN on 54,000+ PlantVillage images to detect 15 disease types, achieving 93.7% validation accuracy. Exported as a TensorFlow Lite model with a mobile-friendly upload interface to keep it accessible on low-end devices.</p>
+						<p>Tech used: Python, TensorFlow, Keras, OpenCV, NumPy</p>
+						<a href="https://github.com/">View Crop Disease Detector on GitHub</a>
+					</details>
+				</article>
+				<article>
+					<h3>Handwritten Digit Recognizer</h3>
+					<p>A web app that recognizes handwritten digits drawn on a canvas, powered by a CNN trained on MNIST.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Wanted a hands-on end-to-end ML project connecting a trained model directly to a user-facing interface. Built a CNN on MNIST (99.1% test accuracy) and wrapped it in a Flask backend that receives canvas pixel data via AJAX, preprocesses it, and returns a prediction with confidence score — no page reload needed.</p>
+						<p>Tech used: Python, TensorFlow, Flask, HTML/CSS/JS</p>
+						<a href="https://github.com/">View Digit Recognizer on GitHub</a>
+					</details>
+				</article>
+			</section>
+			<section class="domain">
+				<h2>Mini Projects & Experiments</h2>
+				<article>
+					<h3>Terminal Task Manager (CLI App)</h3>
+					<p>A command-line productivity tool to create, track, and manage daily tasks with priority tagging.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Existing task apps felt bloated for simple daily tracking needs. Built a pure Python CLI tool using argparse that supports adding, filtering, and completing tasks with priority tags, persisting everything in a local JSON file. A clean exercise in file I/O and terminal UI design using ANSI color codes.</p>
+						<p>Tech used: Python, argparse, JSON, CSV</p>
+						<a href="https://github.com/">View Task Manager on GitHub</a>
+					</details>
+				</article>
+				<article>
+					<h3>Wikipedia Summary Bot (Telegram Bot)</h3>
+					<p>A Telegram bot that returns a clean Wikipedia summary for any topic the user sends as a message.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Wanted a quick way to get topic summaries without leaving Telegram. Built a bot using python-telegram-bot that queries the Wikipedia API and replies with a 3-sentence summary and article link, handling disambiguation pages gracefully. Deployed on Railway for 24/7 uptime — a practical intro to webhooks and bot deployment.</p>
+						<p>Tech used: Python, python-telegram-bot, Wikipedia API, Railway (deployment)</p>
+						<a href="https://github.com/">View Wikipedia Bot on GitHub</a>
+					</details>
+				</article>
+				<article>
+					<h3>Expense Tracker with Visual Reports</h3>
+					<p>A desktop GUI app to log daily expenses and generate monthly spending reports with charts.</p>
+					<details>
+						<summary>View details</summary>
+						<p>Tracking personal spending during college was always an afterthought. Built a Tkinter desktop app backed by SQLite that logs categorized expenses and generates monthly pie and bar charts via Matplotlib. Ended up being the most personally used project — also includes a CSV export for manual review.</p>
+						<p>Tech used: Python, Tkinter, Matplotlib, SQLite3</p>
+						<a href="https://github.com/">View Expense Tracker on GitHub</a>
+					</details>
+				</article>
+			</section>
+		</main>
+		
+		<footer>
+			<nav aria-label="Professional profiles">
+				<a href="https://github.com/">GitHub</a>
+				<a href="https://in.linkedin.com/">LinkedIn</a>
+				<a href="https://leetcode.com/">LeetCode</a>
+				<a href="https://www.hackerrank.com/">HackerRank</a>
+			</nav>
+			<nav aria-label="Footer navigation" >
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</footer>
+		
+	</body> 
+</html>

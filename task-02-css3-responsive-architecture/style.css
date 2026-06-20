@@ -1,0 +1,14 @@
+a, button{
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+summary {
+  min-width: 24px;
+  min-height: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
