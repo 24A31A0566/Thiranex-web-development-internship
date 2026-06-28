@@ -1,67 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<title>Arjun Mehra | Data Science & ML Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio of Arjun Mehra, a data science and machine learning enthusiast from Hyderabad, open to internships and full-time roles.">
-	<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<a href="#main-content">Skip to main content</a>
-		<header>
-			<nav aria-label="Main navigation" >
-				<a href="index.html" aria-current="page" >Home</a>
-				<a href="about.html">About</a>
-				<a href="projects.html">Projects</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</header>
-		
-		<main id="main-content">
-			<h1>Hi, I'm Arjun Mehra</h1>
-			<section id="hero">
-				<img alt="Portrait of Arjun Mehra" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" width="400" height="400">
-				<h2>Data Science & Machine Learning Enthusiast</h2>
-				<p>I'm a recently graduated Computer Science engineer with a strong foundation in Python, ML, and NLP. I love turning messy real-world data into clear, actionable insights.</p>
-				<p>Currently open to internships, freelance projects, and full-time opportunities in Data Science and AI/ML.</p>
-			</section>
-			
-			<section id="skills-preview">
-				<h2>Domains I Work In</h2>
-				<ul>
-					<li>Python & Data Science</li>
-					<li>Machine Learning & Deep Learning</li>
-					<li>Natural Language Processing</li>
-					<li>SQL & Data Analysis</li>
-				</ul>
-			</section>
-			
-			<section id="project-preview">
-				<h2>Some Projects I've Built</h2>
-				<ul>
-					<li>Sentiment Analysis of Product Reviews</li>
-					<li>Student Performance Predictor</li>
-					<li>News Article Scraper & Classifier</li>
-					<li>Crop Disease Detection using CNN</li>
-				</ul>
-			</section>
-		</main>
-		
-		<footer>
-			<nav aria-label="Professional profiles">
-				<a href="https://github.com/">GitHub</a>
-				<a href="https://in.linkedin.com/">LinkedIn</a>
-				<a href="https://leetcode.com/">LeetCode</a>
-				<a href="https://www.hackerrank.com/">HackerRank</a>
-			</nav>
-			<nav aria-label="Footer navigation" >
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="projects.html">Projects</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</footer>
-		
-	</body> 
+<head>
+  <title>Arjun Mehra | Data Science & ML Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Arjun Mehra, a data science and machine learning enthusiast from Hyderabad, open to internships and full-time roles.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 
+    HOW DARK MODE WORKS (CSS-only):
+    1. A hidden <input type="checkbox"> with id="theme-toggle" sits at the top of <body>.
+    2. A <label for="theme-toggle"> inside the nav acts as the clickable switch.
+    3. The CSS selector "#theme-toggle:checked ~ * { ... }" targets all siblings
+       of the checkbox and changes the CSS variables to dark-mode values.
+    4. No JavaScript needed!
+  -->
+  <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="nav-inner">
+      <!-- Site name / logo area -->
+      <span class="nav-brand">Arjun Mehra</span>
+
+      <!-- Main navigation links -->
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Dark mode toggle — label connected to the hidden checkbox above -->
+      <label for="theme-toggle" class="theme-label" title="Toggle dark mode">
+        <span class="toggle-icon" aria-hidden="true"></span>
+        <span class="toggle-track"></span>
+        <span class="sr-only">Toggle dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="hero" aria-label="Introduction">
+      <img
+        class="profile-image"
+        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces"
+        alt="Portrait of Arjun Mehra"
+        width="160"
+        height="160"
+      >
+      <div class="hero-content">
+        <h1>Hi, I'm Arjun Mehra</h1>
+        <h2>Data Science & Machine Learning Enthusiast</h2>
+        <p>
+          I'm a recently graduated Computer Science engineer with a strong
+          foundation in Python, ML, and NLP. I love turning messy real-world
+          data into clear, actionable insights.
+        </p>
+        <p>
+          Currently open to internships, freelance projects, and full-time
+          opportunities in Data Science and AI/ML.
+        </p>
+      </div>
+    </section>
+
+    <!-- DOMAINS SECTION -->
+    <section aria-labelledby="domains-heading">
+      <h2 id="domains-heading">Domains I Work In</h2>
+      <div class="domains-grid">
+        <div class="domain-card">
+          <h3>🐍 Python & Data Science</h3>
+          <p>Data wrangling, EDA, and pipelines with Pandas, NumPy, and Scikit-learn.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🤖 Machine Learning & Deep Learning</h3>
+          <p>Regression, classification, CNNs, and model deployment with TensorFlow & Flask.</p>
+        </div>
+        <div class="domain-card">
+          <h3>💬 Natural Language Processing</h3>
+          <p>Sentiment analysis, text classification, and BERT fine-tuning with HuggingFace.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🗄️ SQL & Data Analysis</h3>
+          <p>Querying, aggregating, and visualising data with SQL, Power BI, and Seaborn.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Some Projects I've Built</h2>
+      <ul class="pill-list">
+        <li class="pill">Sentiment Analysis of Product Reviews</li>
+        <li class="pill">Student Performance Predictor</li>
+        <li class="pill">News Article Scraper & Classifier</li>
+        <li class="pill">Crop Disease Detection using CNN</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <nav aria-label="Professional profiles">
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://in.linkedin.com/">LinkedIn</a>
+        <a href="https://leetcode.com/">LeetCode</a>
+        <a href="https://www.hackerrank.com/">HackerRank</a>
+      </nav>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2024 Arjun Mehra</p>
+    </div>
+  </footer>
+
+</body>
 </html>
