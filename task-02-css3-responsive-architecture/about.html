@@ -1,118 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<title>About Arjun Mehra | CS Graduate & ML Enthusiast</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Learn about Arjun Mehra's education, skills, certifications, and interests in data science, AI, and machine learning.">
-	<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<a href="#main-content">Skip to main content</a>
-		<header>
-			<nav aria-label="Main navigation" >
-				<a href="index.html" aria-current="page" >Home</a>
-				<a href="about.html">About</a>
-				<a href="projects.html">Projects</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</header>
-		
-		<main id="main-content">
-			<h1>About me</h1>
-			<section id="qualifications">
-				<h2>Qualifications</h2>
-				<h3>Education</h3>
-				<dl>
-					<dt>B.Tech in Computer Science & Engineering</dt>
-					<dd>CGPA 8.4 (2024, CVR College of Engineering, Hyderabad)</dd>
-					<dt>Intermediate</dt>
-					<dd>93.2% (2020, Narayana Junior College)</dd>
-					<dt>SSC</dt>
-					<dd>9.8 GPA (2018, Kendriya Vidyalaya, Hyderabad)</dd>
-				</dl>
-				
-				<h3>Certifications</h3>
-				<dl>
-					<dt>Python for Everybody</dt>
-					<dd>University of Michigan (Coursera)</dd>
-					<dt>Machine Learning Specialization</dt>
-					<dd>Andrew Ng (Coursera)</dd>
-					<dt>SQL for Data Science</dt>
-					<dd>UC Davis (Coursera)</dd>
-				</dl>
-				
-				<h3>Internships</h3>
-				<dl>
-					<dt>Data Science Intern — TechSpark Solutions, Hyderabad (June–Aug 2023)</dt>
-					<dd>Built a sales forecasting model using time-series analysis</dd>
-					<dt>ML Research Intern — Research Assistant, University AI Lab (Jan–Mar 2023):</dt>
-					<dd>Assisted in NLP pipeline development for regional language text classification</dd>
-				</dl>				
-			</section>
-			
-			<section id="activities">
-				<h2>Activities</h2>
-				<h3>Hackathons</h3>
-				<ul>
-					<li>Smart India Hackathon 2023 — Finalists (AI-based crop advisory system)</li>
-					<li>Google Solution Challenge 2023 — Participated (mental health chatbot using NLP)</li>
-				</ul>
-				
-				<h3>Extracurricular</h3>
-				<ul>
-					<li>Technical Content Lead, AI & Data Science Club, CVR College</li>
-					<li>Member, Environmental Awareness Club (organized a campus sustainability drive)</li>
-					<li>Organized "DataVerse 2023" — an inter-college data science competition with 200+ participants</li>
-				</ul>
-			</section>
-			
-			<section id="skills">
-				<h2>My Skills</h2>
-				<ul>
-					<li>Python</li>
-					<li>Machine Learning</li>
-					<li>Deep Learning (TensorFlow, Keras)</li>
-					<li>Natural Language Processing (NLTK, spaCy)</li>
-					<li>SQL & MySQL</li>
-					<li>Web Scraping (BeautifulSoup, Scrapy)</li>
-					<li>Data Visualization (Matplotlib, Seaborn, Power BI)</li>
-					<li>C & C++</li>
-					<li>DSA</li>
-				</ul>
-			</section>
-			
-			<section id="interests">
-				<h2>I'm Passionate About</h2>
-				<h3>Technical</h3>
-				<ul>
-					<li>Artificial Intelligence & ML Research</li>
-					<li>Natural Language Processing</li>
-					<li>Data Science & Predictive Analytics</li>
-				</ul>
-				<h3>Other</h3>
-				<ul>
-					<li>Painting (watercolors)</li>
-					<li>Listening to Carnatic music</li>
-					<li>Reading — currently into sci-fi and behavioral psychology books</li>
-				</ul>
-			</section>
-		</main>
-		
-		<footer>
-			<nav aria-label="Professional profiles">
-				<a href="https://github.com/">GitHub</a>
-				<a href="https://in.linkedin.com/">LinkedIn</a>
-				<a href="https://leetcode.com/">LeetCode</a>
-				<a href="https://www.hackerrank.com/">HackerRank</a>
-			</nav>
-			<nav aria-label="Footer navigation" >
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="projects.html">Projects</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</footer>
-		
-	</body> 
+<head>
+  <title>About Arjun Mehra | CS Graduate & ML Enthusiast</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Arjun Mehra's education, skills, certifications, and interests in data science, AI, and machine learning.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="nav-inner">
+      <span class="nav-brand">Arjun Mehra</span>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="theme-toggle" class="theme-label" title="Toggle dark mode">
+        <span class="toggle-icon" aria-hidden="true"></span>
+        <span class="toggle-track"></span>
+        <span class="sr-only">Toggle dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <h1>About Me</h1>
+
+    <!-- QUALIFICATIONS -->
+    <section id="qualifications" aria-labelledby="qual-heading">
+      <h2 id="qual-heading">Qualifications</h2>
+      <div class="about-grid">
+
+        <!-- Education -->
+        <div class="about-card">
+          <h3>Education</h3>
+          <dl>
+            <dt>B.Tech in Computer Science & Engineering</dt>
+            <dd>CGPA 8.4 — 2024, CVR College of Engineering, Hyderabad</dd>
+
+            <dt>Intermediate</dt>
+            <dd>93.2% — 2020, Narayana Junior College</dd>
+
+            <dt>SSC</dt>
+            <dd>9.8 GPA — 2018, Kendriya Vidyalaya, Hyderabad</dd>
+          </dl>
+        </div>
+
+        <!-- Certifications -->
+        <div class="about-card">
+          <h3>Certifications</h3>
+          <dl>
+            <dt>Python for Everybody</dt>
+            <dd>University of Michigan (Coursera)</dd>
+
+            <dt>Machine Learning Specialization</dt>
+            <dd>Andrew Ng (Coursera)</dd>
+
+            <dt>SQL for Data Science</dt>
+            <dd>UC Davis (Coursera)</dd>
+          </dl>
+        </div>
+
+      </div>
+
+      <!-- Internships — full width -->
+      <div class="about-card" style="margin-top: var(--space-lg);">
+        <h3>Internships</h3>
+        <dl>
+          <dt>Data Science Intern — TechSpark Solutions, Hyderabad (June–Aug 2023)</dt>
+          <dd>Built a sales forecasting model using time-series analysis.</dd>
+
+          <dt>ML Research Intern — University AI Lab (Jan–Mar 2023)</dt>
+          <dd>Assisted in NLP pipeline development for regional language text classification.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" aria-labelledby="act-heading">
+      <h2 id="act-heading">Activities</h2>
+      <div class="about-grid">
+
+        <div class="about-card">
+          <h3>Hackathons</h3>
+          <ul class="activity-list">
+            <li>🏆 Smart India Hackathon 2023 — Finalists (AI-based crop advisory system)</li>
+            <li>💡 Google Solution Challenge 2023 — Participated (mental health chatbot using NLP)</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h3>Extracurricular</h3>
+          <ul class="activity-list">
+            <li>✍️ Technical Content Lead, AI & Data Science Club, CVR College</li>
+            <li>🌿 Member, Environmental Awareness Club (organised a campus sustainability drive)</li>
+            <li>🎯 Organised "DataVerse 2023" — inter-college data science competition with 200+ participants</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">My Skills</h2>
+      <div class="about-card">
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>Deep Learning (TensorFlow, Keras)</li>
+          <li>Natural Language Processing (NLTK, spaCy)</li>
+          <li>SQL & MySQL</li>
+          <li>Web Scraping (BeautifulSoup, Scrapy)</li>
+          <li>Data Visualization (Matplotlib, Seaborn, Power BI)</li>
+          <li>C & C++</li>
+          <li>DSA</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">I'm Passionate About</h2>
+      <div class="about-grid">
+
+        <div class="about-card">
+          <h3>Technical</h3>
+          <ul class="activity-list">
+            <li>🧠 Artificial Intelligence & ML Research</li>
+            <li>💬 Natural Language Processing</li>
+            <li>📊 Data Science & Predictive Analytics</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h3>Other</h3>
+          <ul class="activity-list">
+            <li>🎨 Painting (watercolors)</li>
+            <li>🎵 Listening to Carnatic music</li>
+            <li>📚 Reading — currently into sci-fi and behavioral psychology books</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <nav aria-label="Professional profiles">
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://in.linkedin.com/">LinkedIn</a>
+        <a href="https://leetcode.com/">LeetCode</a>
+        <a href="https://www.hackerrank.com/">HackerRank</a>
+      </nav>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2024 Arjun Mehra</p>
+    </div>
+  </footer>
+
+</body>
 </html>
